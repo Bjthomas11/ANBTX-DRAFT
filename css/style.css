@@ -411,7 +411,7 @@ a > .fab.fa-linkedin-in {
 }
 
 /* TABLET VIEW */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   body {
     color: red;
   }

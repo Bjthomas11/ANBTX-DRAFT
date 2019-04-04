@@ -409,3 +409,17 @@ a > .fab.fa-linkedin-in {
   width: 25px;
   color: #0d56a4;
 }
+
+/* TABLET VIEW */
+@media only screen and (min-width: 768px) {
+  body {
+    color: red;
+  }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 1000px) {
+  body {
+    color: blue;
+  }
+}

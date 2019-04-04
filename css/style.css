@@ -412,8 +412,22 @@ a > .fab.fa-linkedin-in {
 
 /* TABLET VIEW */
 @media only screen and (min-width: 767px) {
+  .first-text {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .letter-text {
+    font-size: 17px;
+  }
+
   div.strong-text {
     font-size: 35px;
+  }
+
+  .ceo-part {
+    padding: 20px;
+    padding-bottom: 0px;
   }
 
   .ceo-img {
@@ -423,11 +437,11 @@ a > .fab.fa-linkedin-in {
   .ceo-signature {
     float: right;
     position: relative;
-    bottom: 320px;
-    left: 70px;
+    bottom: 260px;
+    left: 40px;
   }
   .ceo-signature img {
-    width: 400px;
+    width: 300px;
   }
 
   #top-first {
@@ -456,6 +470,11 @@ a > .fab.fa-linkedin-in {
     padding: 50px;
   }
 
+  .top-statement-2 {
+    position: relative;
+    top: 50px;
+  }
+
   .table {
     background: #fff;
     position: relative;
@@ -472,7 +491,6 @@ a > .fab.fa-linkedin-in {
     margin: 0 auto;
   }
 
-  .text-first,
   .text-first {
     font-size: 20px;
   }
@@ -482,14 +500,21 @@ a > .fab.fa-linkedin-in {
     font-size: 35px;
   }
 
+  .social-networks {
+    padding: 30px;
+  }
+
+  .social-links {
+    bottom: 5px;
+  }
+
   .social-links a {
     border: 1px solid #fff;
     background: #fff;
     border-radius: 50%;
-    padding: 7px;
-    font-size: 15px;
-    width: 20px;
+    padding: 20px;
     color: #0d56a4;
+    margin-right: 6px;
   }
 
   a > .fab.fa-facebook-f,
@@ -498,11 +523,12 @@ a > .fab.fa-linkedin-in {
     width: 20px;
     border: 1px solid #fff;
     background: #fff;
-    border-radius: 50%;
     padding: 5px;
-    font-size: 15px;
-    width: 25px;
+    font-size: 25px;
     color: #0d56a4;
+    position: relative;
+    right: 5px;
+    top: 3px;
   }
 }
 

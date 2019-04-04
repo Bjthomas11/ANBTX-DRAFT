@@ -316,6 +316,10 @@ table {
   background-color: #0d56a4;
 }
 
+.slide:active {
+  color: #0d56a4;
+}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;

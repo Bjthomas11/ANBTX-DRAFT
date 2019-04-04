@@ -236,7 +236,7 @@ table {
   top: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 780px) {
   .header li {
     float: left;
   }
@@ -412,8 +412,59 @@ a > .fab.fa-linkedin-in {
 
 /* TABLET VIEW */
 @media only screen and (min-width: 767px) {
-  body {
-    color: red;
+  div.strong-text {
+    font-size: 35px;
+  }
+
+  .ceo-img {
+    width: 50%;
+  }
+
+  .ceo-signature {
+    float: right;
+    position: relative;
+    bottom: 320px;
+    left: 70px;
+  }
+  .ceo-signature img {
+    width: 400px;
+  }
+
+  #top-first {
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    bottom: 200px;
+  }
+
+  #top-second {
+    display: inline-block;
+    position: relative;
+    bottom: 200px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .inner-text {
+    margin-top: 0px;
+  }
+
+  .top-statement {
+    width: 100%;
+    height: 800px;
+    padding: 50px;
+  }
+
+  .table {
+    background: #fff;
+    position: relative;
+    bottom: 200px;
+    padding: 20px;
+  }
+
+  .table-head-text {
+    font-size: 15px;
   }
 }
 

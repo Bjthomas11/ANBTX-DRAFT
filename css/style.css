@@ -1,0 +1,407 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  color: #fff;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #0d56a4;
+}
+
+.header li a {
+  display: block;
+  padding: 20px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* width: 70%; */
+  margin: 0 auto;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.main-header {
+  background: url(/img/Desktop/desktop-main-logo.png);
+  width: 100%;
+  background-size: cover;
+  height: 370px;
+  background-position: center;
+  margin-top: 50px;
+}
+
+.main-header h3 {
+  font-size: 20px;
+  color: #fff;
+  padding-top: 30px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+/* 
+.smaller-logos {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.smaller-logos a:first-child {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+}
+
+.smaller-logos a:last-child {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+} */
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+.header .menu-icon .navicon {
+  background: #0d56a4;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #0d56a4;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* ceo section */
+.ceo-section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.first-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth {
+  margin-bottom: 25px;
+}
+
+.third span {
+  font-size: 25px;
+}
+
+.strong-text {
+  color: #0d56a4;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.ceo-signature {
+  margin-top: 20px;
+}
+
+/* consolidated section */
+.top-statement {
+  background: #d0d2d3;
+  padding: 20px;
+}
+
+.inner-text {
+  margin: 10px;
+}
+
+#top-first {
+  color: #0d56a4;
+  font-size: 30px;
+}
+
+#top-second {
+  margin-top: 10px;
+}
+
+/* consolidated table */
+table {
+  display: table;
+  width: 100%;
+}
+
+.table-head-text {
+  color: #0d56a4;
+}
+
+.table-year-1 {
+  background: #0d56a4;
+}
+
+.table-year-2 {
+  background: #5b5a5a;
+}
+
+.td-data {
+  border-bottom: 3px solid #0d56a4;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 400px;
+  text-align: center;
+  padding: 90px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* BANK SECTION */
+.bank-section {
+  margin-top: 30px;
+}
+
+.outer-carousel-section {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides img {
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The sliders */
+.slider-container {
+  text-align: center;
+}
+.slide {
+  cursor: pointer;
+  width: 40px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  outline: none;
+}
+
+.active,
+.slide:hover {
+  background-color: #0d56a4;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bank-text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-first,
+.text-second {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.text-second {
+  margin-bottom: 30px;
+}
+
+span.strong-text {
+  color: #0d56a4;
+  font-size: 25px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* BOTTOM SECTION */
+.bottom-section {
+  width: 80%;
+  margin: 0 auto;
+  color: #0d56a4;
+  padding-bottom: 20px;
+}
+
+.bottom-text .bottom-text-first {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.bottom-text .bottom-text-second {
+  font-size: 15px;
+}
+
+.social-networks {
+  list-style: none;
+  width: 100%;
+  background: #0d56a4;
+  padding: 20px;
+}
+
+.social-link {
+  color: #0d56a4;
+  text-decoration: none;
+  position: relative;
+  left: 20px;
+}
+
+.fab.fa-facebook-f,
+.fab.fa-twitter,
+.fab.fa-linkedin-in {
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 10px;
+  width: 20px;
+}

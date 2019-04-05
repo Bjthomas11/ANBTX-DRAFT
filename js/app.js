@@ -1,16 +1,16 @@
-$(document).ready(function() {
+$(document).ready(() => {
   // Add smooth scrolling to all links
-  $("a").on("click", function(event) {
+  $("a").on("click", function(e) {
     if (this.hash !== "") {
-      event.preventDefault();
+      e.preventDefault();
       const hash = this.hash;
       $("html, body").animate(
         {
           scrollTop: $(hash).offset().top
         },
         800,
-        function() {
-          // Add hash (#) to URL when done scrolling (default click behavior)
+        () => {
+          // Add hash (#) to URL when done scrolling
           window.location.hash = hash;
         }
       );
@@ -18,23 +18,23 @@ $(document).ready(function() {
   });
 });
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
+plusSlides => n => {
   showSlides((slideIndex += n));
-}
+};
 
 // Thumbnail image controls
-function currentSlide(n) {
+currentSlide => n => {
   showSlides((slideIndex = n));
-}
+};
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var sliders = document.getElementsByClassName("slide");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let sliders = document.getElementsByClassName("slide");
   if (n > slides.length) {
     slideIndex = 1;
   }

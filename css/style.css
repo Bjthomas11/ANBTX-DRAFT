@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 a {
   color: #fff;
 }
@@ -20,6 +15,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .header ul {
@@ -36,8 +32,7 @@ a {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   text-decoration: none;
-  text-transform: uppercase;
-  /* width: 70%; */
+  font-size: 15px;
   margin: 0 auto;
 }
 
@@ -102,7 +97,7 @@ a {
   position: relative;
   user-select: none;
 }
-.header .menu-icon .navicon {
+.header .menu-icon .hamburger {
   background: #0d56a4;
   display: block;
   height: 2px;
@@ -111,8 +106,12 @@ a {
   width: 18px;
 }
 
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
+.header .menu-icon .hamburger:after {
+  width: 50%;
+}
+
+.header .menu-icon .hamburger:before,
+.header .menu-icon .hamburger:after {
   background: #0d56a4;
   content: "";
   display: block;
@@ -122,11 +121,11 @@ a {
   width: 100%;
 }
 
-.header .menu-icon .navicon:before {
+.header .menu-icon .hamburger:before {
   top: 5px;
 }
 
-.header .menu-icon .navicon:after {
+.header .menu-icon .hamburger:after {
   top: -5px;
 }
 
@@ -219,20 +218,20 @@ table {
   padding: 90px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-btn:checked ~ .menu-icon .hamburger {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-btn:checked ~ .menu-icon .hamburger:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-btn:checked ~ .menu-icon .hamburger:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .hamburger:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .hamburger:after {
   top: 0;
 }
 
@@ -456,7 +455,7 @@ a > .fab.fa-linkedin-in {
     position: relative;
     bottom: 200px;
     font-size: 15px;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 
@@ -466,8 +465,8 @@ a > .fab.fa-linkedin-in {
 
   .top-statement {
     width: 100%;
-    height: 800px;
-    padding: 50px;
+    height: 850px;
+    padding: 70px;
   }
 
   .top-statement-2 {
@@ -484,6 +483,7 @@ a > .fab.fa-linkedin-in {
 
   .table-head-text {
     font-size: 15px;
+    padding-bottom: 10px;
   }
 
   .mySlides {
@@ -529,6 +529,19 @@ a > .fab.fa-linkedin-in {
     position: relative;
     right: 5px;
     top: 3px;
+  }
+
+  .header li a {
+    width: 40%;
+    font-size: 20px;
+  }
+
+  .bottom-text .bottom-text-first {
+    font-size: 13px;
+  }
+
+  .text-second {
+    margin-bottom: 45px;
   }
 }
 

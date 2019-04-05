@@ -66,32 +66,14 @@ a {
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  /* transition: max-height 0.2s ease-out; */
 }
-/* 
-.smaller-logos {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.smaller-logos a:first-child {
-  position: absolute;
-  bottom: 40px;
-  left: 30px;
-}
-
-.smaller-logos a:last-child {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-} */
 
 /* menu icon */
 
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
+  display: block;
   float: right;
   padding: 28px 20px;
   position: relative;
@@ -461,11 +443,13 @@ a > .fab.fa-linkedin-in {
     right: 40px;
   }
   .ceo-signature img {
-    width: 300px;
+    position: relative;
+    left: 80px;
+    top: 10px;
   }
 
   #top-first {
-    font-size: 38px;
+    font-size: 30px;
     display: inline-block;
     position: relative;
     bottom: 200px;
@@ -496,6 +480,10 @@ a > .fab.fa-linkedin-in {
     left: 50px;
   }
 
+  span.statement-text {
+    display: inline;
+  }
+
   .table {
     background: #fff;
     position: relative;
@@ -515,16 +503,16 @@ a > .fab.fa-linkedin-in {
   }
 
   .text-first {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .text-first span,
   .text-second span {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .text-second span {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .social-networks {
@@ -565,8 +553,12 @@ a > .fab.fa-linkedin-in {
     font-size: 13px;
   }
 
+  .bottom-section {
+    margin-top: 50px;
+  }
+
   .text-second {
-    margin-bottom: 45px;
+    margin-bottom: 0px;
   }
 }
 
@@ -664,7 +656,7 @@ a > .fab.fa-linkedin-in {
   }
 
   .text-second span {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .social-networks {
@@ -706,7 +698,7 @@ a > .fab.fa-linkedin-in {
   }
 
   .text-second {
-    margin-bottom: 45px;
+    margin-bottom: 0px;
   }
 }
 
@@ -870,6 +862,8 @@ a > .fab.fa-linkedin-in {
 
   img.ceo-writing {
     width: 70%;
+    position: relative;
+    left: 200px;
   }
 
   #top-first {

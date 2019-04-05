@@ -22,14 +22,14 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-plusSlides => n => {
+function plusSlides(n) {
   showSlides((slideIndex += n));
-};
+}
 
 // Thumbnail image controls
-currentSlide => n => {
+function currentSlide(n) {
   showSlides((slideIndex = n));
-};
+}
 
 function showSlides(n) {
   let i;

@@ -139,7 +139,7 @@ a {
   margin-top: 30px;
   margin-bottom: 30px;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .first,
@@ -161,18 +161,32 @@ a {
   margin-bottom: 25px;
 }
 
+.ceo-part {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .ceo-signature {
   margin-top: 20px;
+}
+
+img.single-img {
+  width: 230px;
+}
+
+img.ceo-writing {
+  width: 250px;
 }
 
 /* consolidated section */
 .top-statement {
   background: #d0d2d3;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .inner-text {
   margin: 10px;
+  padding: 20px;
 }
 
 #top-first {
@@ -184,10 +198,16 @@ a {
   margin-top: 10px;
 }
 
+span.statement-text {
+  display: none;
+}
+
 /* consolidated table */
 table {
   display: table;
+  background: #fff;
   width: 100%;
+  padding: 15px;
 }
 
 .table-head-text {
@@ -235,7 +255,7 @@ table {
   top: 0;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 990px) {
   .header li {
     float: left;
   }
@@ -353,16 +373,16 @@ table {
 .text-first,
 .text-second {
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .text-second {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 span.strong-text {
   color: #0d56a4;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 5px;
   display: block;
 }
@@ -381,7 +401,7 @@ span.strong-text {
 }
 
 .bottom-text .bottom-text-second {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .social-networks {
@@ -410,7 +430,148 @@ a > .fab.fa-linkedin-in {
 }
 
 /* TABLET VIEW */
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 767px) and (max-width: 908px) {
+  .first-text {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .letter-text {
+    font-size: 17px;
+  }
+
+  div.strong-text {
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+
+  .ceo-part {
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+
+  .ceo-img {
+    width: 50%;
+  }
+
+  .ceo-signature {
+    float: right;
+    position: relative;
+    bottom: 260px;
+    right: 40px;
+  }
+  .ceo-signature img {
+    width: 300px;
+  }
+
+  #top-first {
+    font-size: 38px;
+    display: inline-block;
+    position: relative;
+    bottom: 200px;
+  }
+
+  #top-second {
+    display: inline-block;
+    position: relative;
+    bottom: 200px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .inner-text {
+    margin-top: 0px;
+  }
+
+  .top-statement {
+    width: 100%;
+    height: 850px;
+    padding: 50px;
+  }
+
+  .top-statement-2 {
+    position: relative;
+    top: 50px;
+    left: 50px;
+  }
+
+  .table {
+    background: #fff;
+    position: relative;
+    bottom: 200px;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .table-head-text {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+
+  .mySlides {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .text-first {
+    font-size: 20px;
+  }
+
+  .text-first span,
+  .text-second span {
+    font-size: 35px;
+  }
+
+  .text-second span {
+    margin-bottom: 30px;
+  }
+
+  .social-networks {
+    padding: 30px;
+  }
+
+  .social-links {
+    bottom: 5px;
+  }
+
+  .social-links a {
+    background: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    color: #0d56a4;
+    margin-right: 6px;
+  }
+
+  a > .fab.fa-facebook-f,
+  a > .fab.fa-twitter,
+  a > .fab.fa-linkedin-in {
+    width: 20px;
+    background: #fff;
+    padding: 5px;
+    font-size: 25px;
+    color: #0d56a4;
+    position: relative;
+    right: 5px;
+    top: 3px;
+  }
+
+  .header li a {
+    width: 40%;
+    font-size: 20px;
+  }
+
+  .bottom-text .bottom-text-first {
+    font-size: 13px;
+  }
+
+  .text-second {
+    margin-bottom: 45px;
+  }
+}
+
+/* TABLET VIEW PART 2 */
+@media only screen and (min-width: 909px) and (max-width: 989px) {
   .first-text {
     font-size: 17px;
     margin-bottom: 20px;
@@ -437,7 +598,7 @@ a > .fab.fa-linkedin-in {
     float: right;
     position: relative;
     bottom: 260px;
-    left: 40px;
+    right: 40px;
   }
   .ceo-signature img {
     width: 300px;
@@ -447,13 +608,13 @@ a > .fab.fa-linkedin-in {
     font-size: 40px;
     display: inline-block;
     position: relative;
-    bottom: 200px;
+    bottom: 170px;
   }
 
   #top-second {
     display: inline-block;
     position: relative;
-    bottom: 200px;
+    bottom: 240px;
     font-size: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -465,20 +626,22 @@ a > .fab.fa-linkedin-in {
 
   .top-statement {
     width: 100%;
-    height: 850px;
     padding: 70px;
+    height: 850px;
   }
 
   .top-statement-2 {
     position: relative;
-    top: 50px;
+    top: 130px;
+    left: 80px;
   }
 
   .table {
     background: #fff;
     position: relative;
-    bottom: 200px;
+    bottom: 230px;
     padding: 20px;
+    width: 80%;
   }
 
   .table-head-text {
@@ -500,6 +663,143 @@ a > .fab.fa-linkedin-in {
     font-size: 35px;
   }
 
+  .text-second span {
+    margin-bottom: 30px;
+  }
+
+  .social-networks {
+    padding: 30px;
+  }
+
+  .social-links {
+    bottom: 5px;
+  }
+
+  .social-links a {
+    background: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    color: #0d56a4;
+    margin-right: 6px;
+  }
+
+  a > .fab.fa-facebook-f,
+  a > .fab.fa-twitter,
+  a > .fab.fa-linkedin-in {
+    width: 20px;
+    background: #fff;
+    padding: 5px;
+    font-size: 25px;
+    color: #0d56a4;
+    position: relative;
+    right: 5px;
+    top: 3px;
+  }
+
+  .header li a {
+    width: 40%;
+    font-size: 20px;
+  }
+
+  .bottom-text .bottom-text-first {
+    font-size: 13px;
+  }
+
+  .text-second {
+    margin-bottom: 45px;
+  }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 990px) {
+  .header {
+    height: 50px;
+  }
+
+  .header .logo {
+    position: relative;
+    left: 50px;
+  }
+
+  .header .menu {
+    height: 50px;
+    background: none;
+  }
+
+  ul.menu {
+    margin-right: 300px;
+  }
+
+  .header li a {
+    position: relative;
+    top: 20px;
+    display: inline;
+    font-size: 15px;
+    color: #0d56a4;
+    padding: 0px 10px 0px 20px;
+    border-bottom: 2px solid transparent;
+  }
+
+  .menu a:hover {
+    border-bottom: 3px solid #0d56a4;
+    transition: border 0.2s linear;
+  }
+
+  .main-header {
+    background: url(/img/Desktop/desktop-main-logo.png);
+    background-size: cover;
+    height: 900px;
+  }
+
+  .main-header h3 {
+    font-size: 40px;
+    position: relative;
+    top: 190px;
+    left: 400px;
+  }
+
+  .header-social {
+    display: inline-block;
+    position: relative;
+    right: 0;
+  }
+
+  ul.header-social-networks {
+    padding: 50px;
+    list-style: none;
+  }
+
+  .p.header-social-links a {
+    text-decoration: none;
+    position: relative;
+  }
+  /* 
+  .social-networks {
+  list-style: none;
+  width: 100%;
+  background: #0d56a4;
+  padding: 20px;
+}
+
+.social-links {
+  text-decoration: none;
+  position: relative;
+  left: 20px;
+}
+
+a > .fab.fa-facebook-f,
+a > .fab.fa-twitter,
+a > .fab.fa-linkedin-in {
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 15px;
+  width: 25px;
+  color: #0d56a4;
+}
+  
+  
   .social-networks {
     padding: 30px;
   }
@@ -529,25 +829,152 @@ a > .fab.fa-linkedin-in {
     position: relative;
     right: 5px;
     top: 3px;
+  } */
+
+  .ceo-section {
+    width: 60%;
   }
 
-  .header li a {
-    width: 40%;
+  .first-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .letter-text {
+    font-size: 16px;
+  }
+
+  div.strong-text {
+    font-size: 30px;
+    padding: 10px;
+    width: 80%;
+  }
+
+  .ceo-part {
+    padding: 20px;
+    padding-bottom: 0px;
+    position: relative;
+    left: 100px;
+  }
+
+  img.single-img {
+    width: 300px;
+  }
+
+  .ceo-signature {
+    float: right;
+    position: relative;
+    bottom: 315px;
+    right: 300px;
+  }
+
+  img.ceo-writing {
+    width: 70%;
+  }
+
+  #top-first {
+    font-size: 40px;
+    display: inline-block;
+  }
+
+  #top-second {
+    display: inline-block;
+    position: relative;
+    bottom: 170px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .inner-text {
+    margin-top: 0px;
+  }
+
+  .top-statement {
+    width: 100%;
+    padding: 70px;
+    height: 850px;
+  }
+
+  .top-statement-2 {
+    position: relative;
+    top: 130px;
+    left: 400px;
+  }
+
+  .table {
+    background: #fff;
+    position: relative;
+    bottom: 170px;
+    left: 10px;
+    padding: 25px;
+    width: 50%;
+  }
+
+  .table-head-text {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+
+  .mySlides {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .bank-text {
+    width: 42%;
+    margin: 0 auto;
+  }
+
+  .text-first {
+    font-size: 16px;
+  }
+
+  .text-first span,
+  .text-second span {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  span.strong-text {
     font-size: 20px;
+  }
+
+  .social-networks {
+    padding: 30px;
+  }
+
+  .social-links {
+    bottom: 5px;
+  }
+
+  div.bottom-section {
+    margin-top: 70px;
+    position: relative;
+    left: 360px;
+  }
+
+  .social-links a {
+    background: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    color: #0d56a4;
+    margin-right: 6px;
+  }
+
+  a > .fab.fa-facebook-f,
+  a > .fab.fa-twitter,
+  a > .fab.fa-linkedin-in {
+    width: 20px;
+    background: #fff;
+    padding: 5px;
+    font-size: 25px;
+    color: #0d56a4;
+    position: relative;
+    right: 5px;
+    top: 3px;
   }
 
   .bottom-text .bottom-text-first {
     font-size: 13px;
-  }
-
-  .text-second {
-    margin-bottom: 45px;
-  }
-}
-
-/* DESKTOP VIEW */
-@media only screen and (min-width: 1000px) {
-  body {
-    color: blue;
   }
 }

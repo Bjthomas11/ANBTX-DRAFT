@@ -26,6 +26,48 @@ a {
   background-color: #0d56a4;
 }
 
+ul.header-social-networks {
+  list-style: none;
+  position: relative;
+  top: 190px;
+  left: 20px;
+}
+
+.social-networks {
+  list-style: none;
+  width: 100%;
+  background: #0d56a4;
+  padding: 20px;
+}
+
+.social-links {
+  text-decoration: none;
+  position: relative;
+  left: 20px;
+}
+
+i.facebook-footer,
+i.twitter-footer,
+i.linkedin-footer {
+  background: #fff;
+  border-radius: 50%;
+  padding: 7px;
+  font-size: 20px;
+  width: 30px;
+  color: #0d56a4;
+}
+
+a > .f-1,
+a > .t-1,
+a > .linked-1 {
+  background: #d0d2d3;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 10px;
+  width: 20px;
+  color: #1a2a36;
+}
+
 .header li a {
   display: block;
   padding: 20px;
@@ -39,26 +81,43 @@ a {
 .header .logo {
   display: block;
   float: left;
-  font-size: 2em;
   padding: 10px 20px;
   text-decoration: none;
+  width: 300px;
 }
 
 .main-header {
-  background: url(/img/Desktop/desktop-main-logo.png);
   width: 100%;
-  background-size: cover;
-  height: 370px;
-  background-position: center;
-  margin-top: 50px;
+  height: 100%;
 }
 
-.main-header h3 {
+.inner-header {
+  background: url(/img/Desktop/desktop-main-logo.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+  height: 370px;
+  width: 100%;
+}
+
+.main-header p {
   font-size: 20px;
   color: #fff;
   padding-top: 30px;
   padding-left: 20px;
   text-transform: uppercase;
+}
+
+.lower-header-text {
+  color: #d0d2d3;
+  font-size: 15px;
+  position: relative;
+  left: 10px;
+  text-decoration: none;
+}
+
+span.header-text-span {
+  font-weight: bold;
 }
 
 /* menu */
@@ -78,6 +137,7 @@ a {
   padding: 28px 20px;
   position: relative;
   user-select: none;
+  right: 20px;
 }
 .header .menu-icon .hamburger {
   background: #0d56a4;
@@ -124,6 +184,10 @@ a {
   font-size: 18px;
 }
 
+.first-text p {
+  width: 50%;
+}
+
 .first,
 .second,
 .third,
@@ -139,7 +203,7 @@ a {
 
 .strong-text {
   color: #0d56a4;
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 25px;
 }
 
@@ -167,17 +231,21 @@ img.ceo-writing {
 }
 
 .inner-text {
-  margin: 10px;
+  /* margin: 10px; */
   padding: 20px;
+  position: relative;
+  left: 30px;
 }
 
 #top-first {
   color: #0d56a4;
-  font-size: 30px;
+  font-size: 35px;
+  width: 50%;
 }
 
 #top-second {
   margin-top: 10px;
+  width: 50%;
 }
 
 span.statement-text {
@@ -306,7 +374,7 @@ table {
   cursor: pointer;
   width: 40px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #0d56a4;
   display: inline-block;
   transition: background-color 0.6s ease;
   outline: none;
@@ -355,7 +423,7 @@ table {
 .text-first,
 .text-second {
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .text-second {
@@ -364,11 +432,11 @@ table {
 
 span.strong-text {
   color: #0d56a4;
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 5px;
   display: block;
+  width: 50%;
 }
-
 /* BOTTOM SECTION */
 .bottom-section {
   width: 80%;
@@ -377,45 +445,37 @@ span.strong-text {
   padding-bottom: 20px;
 }
 
-.bottom-text .bottom-text-first {
+div.bottom-text {
+  width: 80%;
+  text-transform: uppercase;
+}
+
+.bottom-text-first {
   text-transform: uppercase;
   font-size: 14px;
 }
 
-.bottom-text .bottom-text-second {
-  font-size: 13px;
-}
-
-.social-networks {
-  list-style: none;
-  width: 100%;
-  background: #0d56a4;
-  padding: 20px;
-}
-
-.social-links {
-  text-decoration: none;
-  position: relative;
-  left: 20px;
-}
-
-a > .fab.fa-facebook-f,
-a > .fab.fa-twitter,
-a > .fab.fa-linkedin-in {
-  border: 1px solid #fff;
-  background: #fff;
-  border-radius: 50%;
-  padding: 5px;
-  font-size: 15px;
-  width: 25px;
-  color: #0d56a4;
+.bottom-text-second {
+  font-size: 12px;
 }
 
 /* TABLET VIEW */
 @media only screen and (min-width: 767px) and (max-width: 908px) {
+  .main-header p {
+    position: relative;
+    top: 20px;
+    left: 60px;
+    font-size: 25px;
+  }
+
   .first-text {
     font-size: 17px;
     margin-bottom: 20px;
+  }
+
+  .first-text p {
+    width: 100%;
+    font-size: 20px;
   }
 
   .letter-text {
@@ -440,7 +500,7 @@ a > .fab.fa-linkedin-in {
     float: right;
     position: relative;
     bottom: 260px;
-    right: 40px;
+    right: 30px;
   }
   .ceo-signature img {
     position: relative;
@@ -449,7 +509,9 @@ a > .fab.fa-linkedin-in {
   }
 
   img.ceo-writing {
-    width: 300px;
+    width: 350px;
+    position: relative;
+    right: 10px;
   }
 
   #top-first {
@@ -457,6 +519,7 @@ a > .fab.fa-linkedin-in {
     display: inline-block;
     position: relative;
     bottom: 200px;
+    width: 100%;
   }
 
   #top-second {
@@ -466,10 +529,13 @@ a > .fab.fa-linkedin-in {
     font-size: 13px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 100%;
   }
 
   .inner-text {
     padding-top: 0px;
+    position: relative;
+    left: -20px;
   }
 
   .top-statement {
@@ -480,7 +546,7 @@ a > .fab.fa-linkedin-in {
 
   .top-statement-2 {
     position: relative;
-    top: 50px;
+    top: 10px;
     left: 50px;
   }
 
@@ -512,7 +578,8 @@ a > .fab.fa-linkedin-in {
 
   .text-first span,
   .text-second span {
-    font-size: 25px;
+    font-size: 35px;
+    width: 100%;
   }
 
   .text-second span {
@@ -526,33 +593,69 @@ a > .fab.fa-linkedin-in {
   .social-links {
     bottom: 5px;
     position: relative;
-    left: 50px;
+    left: 40px;
   }
 
+  .header-social-wrapper {
+    position: relative;
+    bottom: 30px;
+    right: 25px;
+  }
   .social-links a {
     background: #fff;
     border-radius: 50%;
-    padding: 20px;
+    padding: 8px;
     color: #0d56a4;
     margin-right: 6px;
   }
 
-  a > .fab.fa-facebook-f,
-  a > .fab.fa-twitter,
-  a > .fab.fa-linkedin-in {
-    width: 20px;
-    background: #fff;
+  a > .f-1,
+  a > .t-1,
+  a > .linked-1 {
+    background: #d0d2d3;
+    border-radius: 50%;
     padding: 5px;
-    font-size: 25px;
-    color: #0d56a4;
+    font-size: 20px;
+    width: 30px;
+    color: #1a2a36;
+  }
+
+  i.facebook-footer,
+  i.twitter-footer,
+  i.linkedin-footer {
     position: relative;
-    right: 5px;
-    top: 3px;
+    top: 2px;
+    left: 3px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 3px;
+    width: 30px;
+    color: #0d56a4;
+  }
+
+  ul.header-social-networks {
+    position: relative;
+    top: 170px;
+  }
+
+  .lower-header-text {
+    color: #d0d2d3;
+    font-size: 20px;
+    position: relative;
+    top: 23px;
+    left: 70px;
+    text-decoration: none;
   }
 
   .header li a {
     width: 40%;
     font-size: 20px;
+  }
+
+  .header .menu-icon {
+    position: relative;
+    right: 60px;
   }
 
   .bottom-text .bottom-text-first {
@@ -570,9 +673,25 @@ a > .fab.fa-linkedin-in {
 
 /* TABLET VIEW PART 2 */
 @media only screen and (min-width: 909px) and (max-width: 989px) {
+  .inner-header {
+    background-size: 80%;
+  }
+
+  .inner-header > p {
+    position: relative;
+    top: 10px;
+    left: 120px;
+    font-size: 30px;
+  }
+
   .first-text {
     font-size: 17px;
     margin-bottom: 20px;
+  }
+
+  .first-text p {
+    width: 100%;
+    font-size: 25pxs;
   }
 
   .letter-text {
@@ -581,6 +700,7 @@ a > .fab.fa-linkedin-in {
 
   div.strong-text {
     font-size: 35px;
+    /* margin-bottom: 0px; */
   }
 
   .ceo-part {
@@ -595,51 +715,68 @@ a > .fab.fa-linkedin-in {
   .ceo-signature {
     float: right;
     position: relative;
-    bottom: 260px;
-    right: 40px;
+    bottom: 280px;
+    right: 80px;
   }
   .ceo-signature img {
-    width: 300px;
+    position: relative;
+    left: 150px;
+    top: 10px;
+  }
+
+  img.ceo-writing {
+    width: 400px;
+    position: relative;
+    right: 10px;
   }
 
   #top-first {
     font-size: 40px;
     display: inline-block;
     position: relative;
-    bottom: 170px;
+    bottom: 200px;
+    width: 100%;
   }
 
   #top-second {
     display: inline-block;
     position: relative;
-    bottom: 240px;
-    font-size: 15px;
+    bottom: 200px;
+    font-size: 13px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 100%;
   }
 
   .inner-text {
-    margin-top: 0px;
+    width: 100%;
+    padding-top: 0px;
+    position: relative;
+    left: -20px;
   }
 
   .top-statement {
     width: 100%;
-    padding: 70px;
     height: 850px;
+    padding: 50px;
   }
 
   .top-statement-2 {
     position: relative;
-    top: 130px;
-    left: 80px;
+    bottom: 20px;
+    left: 70px;
+  }
+
+  span.statement-text {
+    display: inline;
   }
 
   .table {
     background: #fff;
     position: relative;
-    bottom: 220px;
+    bottom: 200px;
     padding: 20px;
-    width: 80%;
+    width: 90%;
   }
 
   .table-head-text {
@@ -653,16 +790,23 @@ a > .fab.fa-linkedin-in {
   }
 
   .text-first {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .text-first span,
   .text-second span {
-    font-size: 35px;
+    font-size: 40px;
+    width: 100%;
   }
 
   .text-second span {
     margin-bottom: 20px;
+  }
+
+  .text-first,
+  .text-second {
+    margin-bottom: 0px;
+    font-size: 20px;
   }
 
   .social-networks {
@@ -671,27 +815,60 @@ a > .fab.fa-linkedin-in {
 
   .social-links {
     bottom: 5px;
+    position: relative;
+    left: 55px;
   }
 
+  .header-social-wrapper {
+    position: relative;
+    bottom: 30px;
+    right: 50px;
+  }
   .social-links a {
     background: #fff;
     border-radius: 50%;
-    padding: 10px;
+    padding: 12px;
     color: #0d56a4;
     margin-right: 6px;
   }
 
-  a > .fab.fa-facebook-f,
-  a > .fab.fa-twitter,
-  a > .fab.fa-linkedin-in {
-    width: 20px;
-    background: #fff;
+  a > .f-1,
+  a > .t-1,
+  a > .linked-1 {
+    background: #d0d2d3;
+    border-radius: 50%;
     padding: 5px;
-    font-size: 19px;
-    color: #0d56a4;
+    font-size: 20px;
+    width: 30px;
+    color: #1a2a36;
+  }
+
+  i.facebook-footer,
+  i.twitter-footer,
+  i.linkedin-footer {
     position: relative;
-    right: 5px;
-    top: 3px;
+    top: 2px;
+    left: 3px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 2px;
+    width: 30px;
+    color: #0d56a4;
+  }
+
+  ul.header-social-networks {
+    position: relative;
+    top: 160px;
+  }
+
+  .lower-header-text {
+    color: #d0d2d3;
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    left: 160px;
+    text-decoration: none;
   }
 
   .header li a {
@@ -699,12 +876,26 @@ a > .fab.fa-linkedin-in {
     font-size: 20px;
   }
 
-  .bottom-text .bottom-text-first {
-    font-size: 13px;
+  .header-social-links {
+    position: relative;
+    left: 140px;
   }
 
-  .text-second {
-    margin-bottom: 0px;
+  .header .menu-icon {
+    position: relative;
+    right: 60px;
+  }
+
+  .bottom-text-first {
+    font-size: 16px;
+  }
+
+  .bottom-text-second {
+    font-size: 14px;
+  }
+
+  .bottom-section {
+    margin-top: 50px;
   }
 }
 
@@ -771,63 +962,6 @@ a > .fab.fa-linkedin-in {
     text-decoration: none;
     position: relative;
   }
-  /* 
-  .social-networks {
-  list-style: none;
-  width: 100%;
-  background: #0d56a4;
-  padding: 20px;
-}
-
-.social-links {
-  text-decoration: none;
-  position: relative;
-  left: 20px;
-}
-
-a > .fab.fa-facebook-f,
-a > .fab.fa-twitter,
-a > .fab.fa-linkedin-in {
-  border: 1px solid #fff;
-  background: #fff;
-  border-radius: 50%;
-  padding: 5px;
-  font-size: 15px;
-  width: 25px;
-  color: #0d56a4;
-}
-  
-  
-  .social-networks {
-    padding: 30px;
-  }
-
-  .social-links {
-    bottom: 5px;
-  }
-
-  .social-links a {
-    border: 1px solid #fff;
-    background: #fff;
-    border-radius: 50%;
-    padding: 20px;
-    color: #0d56a4;
-    margin-right: 6px;
-  }
-
-  a > .fab.fa-facebook-f,
-  a > .fab.fa-twitter,
-  a > .fab.fa-linkedin-in {
-    width: 20px;
-    border: 1px solid #fff;
-    background: #fff;
-    padding: 5px;
-    font-size: 25px;
-    color: #0d56a4;
-    position: relative;
-    right: 5px;
-    top: 3px;
-  } */
 
   .ceo-section {
     width: 60%;
